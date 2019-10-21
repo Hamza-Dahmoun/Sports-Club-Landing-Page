@@ -47,14 +47,6 @@
             clear: both;
             opacity: 0.8;
             margin-right: 0px;
-            transition-duration: 1.2s;
-        }
-
-        .button:hover {
-            transition-duration: 1.2s;
-            opacity: 1;
-            color: #606060;
-            background-color: transparent;
         }
 
         h2 {
@@ -109,7 +101,7 @@
             margin-right: auto;
         }
 
-        .information .options-container .option .option-height-keeper {
+        .information .options-container .option .option-img-height-keeper {
             /*this class is used to align the option pictures in the same height*/
             min-height: 120px;
             max-height: 120px;
@@ -146,9 +138,38 @@
             width: 100px;
         }
 
+        .information .options-container .option .option-text-height-keeper {
+            /*this class is used to align the option pictures in the same height*/
+            min-height: 400px;
+            max-height: 400px;
+            height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
         .information .options-container .option p {
             font-size: 20px;
             line-height: 30px;
+        }
+        .information .options-container .option a {
+            font-size: 20px;
+            height:40px;
+            line-height: 40px;
+            padding:15px;padding-left: 20px; padding-right: 20px;
+            text-decoration: none;
+            background-color: #222;
+            color:#fff;
+            opacity:0.7;
+            cursor: pointer;
+            transition-duration: 1.2s;
+            border:1px solid transparent;
+        }
+        .information .options-container .option a:hover{
+            transition-duration: 1.2s;
+            color: #222;
+            background-color:#fff;
+            border:1px solid #222;
         }
         .quote{
             height: 800px;
@@ -210,41 +231,47 @@
         <h2>Your Options</h2>
         <div class="options-container">
             <div class="option">
-                <div class="option-height-keeper">
+                <div class="option-img-height-keeper">
                     <div class="option-img small">
                     </div>
                 </div>
-
-                <p>
-                    <strong>Silver</strong> Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-                    doloremque
-                    laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto
-                    beatae vitae dicta sunt explicabo.</p>
+                <div class="option-text-height-keeper">
+                        <p>
+                                <strong>Silver</strong> Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                                doloremque
+                                laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto
+                                beatae vitae dicta sunt explicabo.</p>
+                </div>                
+                    <a>CHOOSE</a>
             </div>
             <div class="option">
-                <div class="option-height-keeper">
+                <div class="option-img-height-keeper">
                     <div class="option-img midium">
                     </div>
                 </div>
-
-                <p>
-                    <strong>Platinum</strong> Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-                    doloremque
-                    laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto
-                    beatae vitae dicta sunt explicabo.</p>
+                <div class="option-text-height-keeper">
+                        <p>
+                                <strong>Platinum</strong> Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                                doloremque
+                                laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto
+                                beatae vitae dicta sunt explicabo.</p>
+                </div>                
+                    <a>CHOOSE</a>
             </div>
             <div class="option">
-                <div class="option-height-keeper">
+                <div class="option-img-height-keeper">
                     <div class="option-img large">
                     </div>
                 </div>
-
-                <p>
-                    <strong>Golden</strong> Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-                    doloremque
-                    laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto
-                    beatae vitae dicta sunt explicabo.
-                </p>
+                <div class="option-text-height-keeper">
+                        <p>
+                                <strong>Golden</strong> Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                                doloremque
+                                laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto
+                                beatae vitae dicta sunt explicabo.
+                            </p>
+                </div>                
+                <a>CHOOSE</a>
             </div>
         </div>
     </div>
