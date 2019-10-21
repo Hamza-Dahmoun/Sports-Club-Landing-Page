@@ -6,9 +6,9 @@
         html,
         body {
             margin: 0%;
-            background-color: /*#fff*/
-                #FBFBFB
-            ;
+            background-color:
+                /*#fff*/
+                #FBFBFB;
         }
 
         .header {
@@ -17,7 +17,8 @@
             background-position: center center;
             background-repeat: no-repeat;
             background-size: cover;
-            background-attachment: fixed;/*this property along with the same one in the quote class
+            background-attachment: fixed;
+            /*this property along with the same one in the quote class
             will give the feeling that we scroll and contents of the page are flowing over the img*/
         }
 
@@ -25,6 +26,15 @@
             height: 100px;
             opacity: 0.7;
             background-color: #222;
+            color:#fff;
+            text-align: right;
+            padding-top: 12px;           
+        }
+
+        .naviga a{
+            text-decoration: none;
+            cursor: pointer;
+            font-size: 25px;padding-left: 20px; padding-right: 20px;
         }
 
         h1 {
@@ -42,7 +52,8 @@
             border: 1px solid #606060;
             color: #fff;
             font-size: 30px;
-            padding: 10px;padding-right: 40px;
+            padding: 10px;
+            padding-right: 40px;
             float: right;
             clear: both;
             opacity: 0.8;
@@ -73,7 +84,7 @@
         .information {
             /*background-color: #f6f6f6;
                 /*#DADADA*/
-            
+
             color: #404040;
             text-align: center;
             padding-top: 80px;
@@ -84,8 +95,8 @@
             height: 100px;
             line-height: 100px;
             background-color: #222;
-            color:#fff;
-            opacity:0.7;
+            color: #fff;
+            opacity: 0.7;
         }
 
         .information .options-container {
@@ -152,59 +163,69 @@
             font-size: 20px;
             line-height: 30px;
         }
+
         .information .options-container .option a {
             font-size: 20px;
-            height:40px;
+            height: 40px;
             line-height: 40px;
-            padding:15px;padding-left: 20px; padding-right: 20px;
+            padding: 15px;
+            padding-left: 20px;
+            padding-right: 20px;
             text-decoration: none;
             background-color: #222;
-            color:#fff;
-            opacity:0.7;
+            color: #fff;
+            opacity: 0.7;
             cursor: pointer;
             transition-duration: 1.2s;
-            border:1px solid transparent;
+            border: 1px solid transparent;
         }
-        .information .options-container .option a:hover{
+
+        .information .options-container .option a:hover {
             transition-duration: 1.2s;
             color: #222;
-            background-color:#fff;
-            border:1px solid #222;
+            background-color: #fff;
+            border: 1px solid #222;
         }
-        .quote{
+
+        .quote {
             height: 800px;
             background-image: url('crossfit-534615_960_720.jpg');
             background-position: center center;
             background-repeat: no-repeat;
             background-size: cover;
-            background-attachment: fixed;/*this property along with the same one in the header class
+            background-attachment: fixed;
+            /*this property along with the same one in the header class
             will give the feeling that we scroll and contents of the page are flowing over the img*/
         }
-        .quote .quote-text-container{
+
+        .quote .quote-text-container {
             padding-top: 60px;
             padding-right: 10px;
             height: 300px;
             opacity: 0.7;
             background-color: #222;
-            color:#fff; 
+            color: #fff;
         }
-        .quote .quote-text-container .quote-text{
+
+        .quote .quote-text-container .quote-text {
             font-size: 55px;
             text-align: right;
         }
-        .quote .quote-text-container .quote-person{
+
+        .quote .quote-text-container .quote-person {
             font-size: 25px;
             text-align: right;
         }
-        .quote .footer{
+
+        .quote .footer {
             font-size: 20px;
-            height:100px;
+            height: 100px;
             opacity: 0.7;
             background-color: #222;
-            color:#fff;
+            color: #fff;
             text-align: center;
             line-height: 100px;
-            margin-top:340px;
+            margin-top: 340px;
             margin-bottom: 0px;
         }
     </style>
@@ -212,7 +233,11 @@
 
 <body>
     <div class="header">
-        <div class="naviga"></div>
+        <div class="naviga">
+            <a>Map</a>
+            <a>Contacts</a>
+            <a>Home</a>
+        </div>
 
         <h1>START YOUR<br /> JOURNEY</h1>
         <a href="" class="button" title="Start your journey now">START NOW</a>
@@ -236,13 +261,14 @@
                     </div>
                 </div>
                 <div class="option-text-height-keeper">
-                        <p>
-                                <strong>Silver</strong> Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-                                doloremque
-                                laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto
-                                beatae vitae dicta sunt explicabo.</p>
-                </div>                
-                    <a>CHOOSE</a>
+                    <p>
+                        <strong>Silver</strong> Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                        accusantium
+                        doloremque
+                        laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto
+                        beatae vitae dicta sunt explicabo.</p>
+                </div>
+                <a>CHOOSE</a>
             </div>
             <div class="option">
                 <div class="option-img-height-keeper">
@@ -250,13 +276,14 @@
                     </div>
                 </div>
                 <div class="option-text-height-keeper">
-                        <p>
-                                <strong>Platinum</strong> Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-                                doloremque
-                                laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto
-                                beatae vitae dicta sunt explicabo.</p>
-                </div>                
-                    <a>CHOOSE</a>
+                    <p>
+                        <strong>Platinum</strong> Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                        accusantium
+                        doloremque
+                        laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto
+                        beatae vitae dicta sunt explicabo.</p>
+                </div>
+                <a>CHOOSE</a>
             </div>
             <div class="option">
                 <div class="option-img-height-keeper">
@@ -264,13 +291,14 @@
                     </div>
                 </div>
                 <div class="option-text-height-keeper">
-                        <p>
-                                <strong>Golden</strong> Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-                                doloremque
-                                laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto
-                                beatae vitae dicta sunt explicabo.
-                            </p>
-                </div>                
+                    <p>
+                        <strong>Golden</strong> Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                        accusantium
+                        doloremque
+                        laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto
+                        beatae vitae dicta sunt explicabo.
+                    </p>
+                </div>
                 <a>CHOOSE</a>
             </div>
         </div>
@@ -278,10 +306,10 @@
 
     <div class="quote">
         <div class="quote-text-container">
-                <p class="quote-text">"Get Stronger in Sifaks Club!"</p>
-                <p class="quote-person">-Some Champion</p>
+            <p class="quote-text">"Get Stronger in Sifaks Club!"</p>
+            <p class="quote-person">-Some Champion</p>
         </div>
-        
+
         <div class="footer">
             All rights reserved (2019)
         </div>
