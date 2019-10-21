@@ -17,7 +17,8 @@
             background-position: center center;
             background-repeat: no-repeat;
             background-size: cover;
-            background-attachment: fixed;
+            background-attachment: fixed;/*this property along with the same one in the quote class
+            will give the feeling that we scroll and contents of the page are flowing over the img*/
         }
 
         .naviga {
@@ -148,12 +149,39 @@
             line-height: 30px;
         }
         .quote{
-            height: 700px;
+            height: 800px;
             background-image: url('crossfit-534615_960_720.jpg');
             background-position: center center;
             background-repeat: no-repeat;
             background-size: cover;
-            background-attachment: fixed;
+            background-attachment: fixed;/*this property along with the same one in the header class
+            will give the feeling that we scroll and contents of the page are flowing over the img*/
+        }
+        .quote .quote-text-container{
+            padding-top: 60px;
+            padding-right: 10px;
+            height: 300px;
+            opacity: 0.7;
+            background-color: #222;
+            color:#fff; 
+        }
+        .quote .quote-text-container .quote-text{
+            font-size: 55px;
+            text-align: right;
+        }
+        .quote .quote-text-container .quote-person{
+            font-size: 25px;
+            text-align: right;
+        }
+        .quote .footer{
+            height:100px;
+            opacity: 0.7;
+            background-color: #222;
+            color:#fff;
+            text-align: center;
+            line-height: 100px;
+            margin-top:340px;
+            margin-bottom: 0px;
         }
     </style>
 </head>
@@ -219,7 +247,14 @@
     </div>
 
     <div class="quote">
-
+        <div class="quote-text-container">
+                <p class="quote-text">"Get Stronger in Sifaks Club!"</p>
+                <p class="quote-person">-Some Champion</p>
+        </div>
+        
+        <div class="footer">
+            All rights reserved (2019)
+        </div>
     </div>
 </body>
 
