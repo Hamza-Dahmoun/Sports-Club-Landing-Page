@@ -10,12 +10,13 @@ html,
             font-family: 'Blinker', sans-serif;
         }
 
-        .header {
-            height: 700px;
+        .header{
+            min-height: 700px;
             background-image: url('crossfit-534615_960_720.jpg');
             background-position: center center;
             background-repeat: no-repeat;
             background-size: cover;
+            /*upto here: header 700px height, having an img as bg, this img is centered horizentally and vertically inside the header, this img is not repeated inside the header, this img should be cropped either vertically or horizentally so that no empty space remains inside the element*/
             background-attachment: fixed;
             /*this property along with the same one in the quote class
             will give the feeling that we scroll and contents of the page are flowing over the img*/
@@ -61,6 +62,7 @@ html,
             opacity: 0.8;
             margin-right: 0px;
         }
+
 
         h2 {
             font-size: 60px;
@@ -197,18 +199,22 @@ html,
             background-position: center center;
             background-repeat: no-repeat;
             background-size: cover;
+            /*upto here: header 700px height, having an img as bg, this img is centered horizentally and vertically inside the header, this img is not repeated inside the header, this img should be cropped either vertically or horizentally so that no empty space remains inside the element*/            
             background-attachment: fixed;
             /*this property along with the same one in the header class
             will give the feeling that we scroll and contents of the page are flowing over the img*/
-        }
+        position:relative;/*relative position so that we can position its child footer in its bottom*/
+           text-align:right;
+    }
 
         .quote .quote-text-container {
-            padding-top: 60px;
-            padding-right: 10px;
-            height: 300px;
             opacity: 0.7;
             background-color: #222;
             color: #fff;
+            height: auto;      
+            padding-right:1%;   padding-top:2%;padding-bottom:2%;
+            /*the following is used to position the text in the begining of the img always even if the img get smaller and cannot fill the background color*/       
+            position:absolute; top:0%;right:0%;left:0%;                
         }
 
         .quote .quote-text-container .quote-text {
@@ -224,12 +230,166 @@ html,
 
         .quote .footer {
             font-size: 20px;
-            height: 100px;
+            padding-top:2%;padding-bottom:2%;
             opacity: 0.7;
             background-color: #222;
             color: #fff;
             text-align: center;
-            line-height: 100px;
-            margin-top: 340px;
-            margin-bottom: 0px;
+            margin-top:auto;
+                position:absolute; bottom:0px;
+                width:100%;
+        }
+
+
+
+        /*FOR HEADER RESPONSIVENESS*/
+        @media screen and (max-width: 1000px) {
+            .header {
+                min-height: 500px;
+            }    
+            .naviga {
+                height: 60px;
+                padding-top: 10px;
+            }    
+            .naviga a {
+                font-size: 22px;
+                padding-left: 15px;
+                padding-right: 15px;
+            }    
+            h1 {
+                font-size: 45px;
+                margin-top: 50px;
+                margin-right: 15px;
+            }    
+            .button {
+                font-size: 23px;
+                padding: 6px;
+                padding-right: 30px;
+            }            
+        }
+        @media screen and (max-width: 870px){
+            /*From this size: the header bg img won't be displayed fully in the horizental axis. So we are going to force it to be displayed by making it contained inside the header and  positionning it in the top left of the header*/
+            .header {     
+                background-size:contain;           
+                background-position: 0 0;    
+            }             
+        }
+        @media screen and (max-width: 600px) {
+            .header {
+                min-height: 320px;
+            }    
+            .naviga {
+                height: 45px;
+                padding-top: 7px;
+            }    
+            .naviga a {
+                font-size: 20px;
+                padding-left: 12px;
+                padding-right: 12px;
+            }    
+            h1 {
+                font-size: 38px;
+                margin-top: 40px;
+                margin-right: 10px;
+            }    
+            .button {
+                font-size: 19px;
+                padding: 4px;
+                padding-right: 26px;
+            }
+        }
+        @media screen and (max-width: 400px) {
+            .header {
+                min-height: 380px;
+            }    
+            .naviga {
+                height: 30px;
+                padding-top: 5px;
+            }    
+            .naviga a {
+                font-size: 15px;
+                padding-left: 8px;
+                padding-right: 8px;
+            }    
+            h1 {
+                font-size: 25px;
+                margin-top: 10px;
+                margin-right: 10px;
+            }    
+            .button {
+                font-size: 15px;
+                padding: 4px;
+                padding-right: 10px;
+            }
+        }
+        @media screen and (max-width: 229px){
+            .header {
+                background-image: none;
+            } 
+        }
+
+
+
+        /*FOR QUOTE AND FOOTER RESPONSIVENESS*/
+        @media screen and (max-width: 1000px){
+            /*CHANGING BG IMG SIZE AND FONTS SIZE*/
+            .quote {
+                min-height: 500px;
+                max-height: 500px; 
+            }   
+            .quote .quote-text-container .quote-text {
+                font-size: 45px;
+            }    
+            .quote .quote-text-container .quote-person {
+                font-size: 20px;
+            }    
+            .quote .footer {
+                font-size: 18px;
+            }
+        }
+        @media screen and (max-width: 870px){
+            .quote {     
+                /*when the bg img is getting bigger we'll show the right part of it*/   
+                background-position: right;    
+            }
+        }
+        @media screen and (max-width: 700px){
+            /*CHANGING FONT SIZE ONLY*/
+            .quote .quote-text-container .quote-text {
+                font-size: 35px;
+            }    
+            .quote .quote-text-container .quote-person {
+                font-size: 15px;
+            }    
+            .quote .footer {
+                font-size: 15px;
+            }
+        }
+        @media screen and (max-width: 550px){
+            /*CHANGING THE BG IMG HEIGHT ONLY*/
+            .quote {
+                min-height: 400px;
+                max-height: 400px; 
+            }   
+            .quote .quote-text-container .quote-text {
+                font-size: 28px;
+            }  
+        }
+        @media screen and (max-width: 350px){
+            /*CHANGING FONT SIZE ONLY*/
+            .quote .quote-text-container .quote-text {
+                font-size: 23px;
+            }    
+            .quote .quote-text-container .quote-person {
+                font-size: 12px;
+            }    
+            .quote .footer {
+                font-size: 12px;
+            }
+        }
+        @media screen and (max-width: 285px){
+            /*CHANGING FONT SIZE ONLY*/
+            .quote .quote-text-container .quote-text {
+                font-size: 20px;
+            }    
         }
