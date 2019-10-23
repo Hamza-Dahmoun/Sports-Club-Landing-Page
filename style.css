@@ -113,13 +113,14 @@ html,
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
-            justify-content: center;
+            justify-content: space-between;
         }
 
         .information .options-container .option {
-            width: 210px;
+            width: 250px;
             margin-left: auto;
             margin-right: auto;
+            margin-bottom:80px;
         }
 
         .information .options-container .option .option-img-height-keeper {
@@ -161,12 +162,13 @@ html,
 
         .information .options-container .option .option-text-height-keeper {
             /*this class is used to align the option pictures in the same height*/
-            min-height: 400px;
-            max-height: 400px;
-            height: 400px;
+            min-height: 340px;
+            max-height: 340px;
+            height: 340px;
             display: flex;
             flex-direction: column;
             justify-content: center;
+            margin-bottom:12%;
         }
 
         .information .options-container .option p {
@@ -175,14 +177,14 @@ html,
         }
 
         .information .options-container .option a {
-            font-size: 20px;
-            height: 40px;
-            line-height: 40px;
-            padding: 15px;
-            padding-left: 20px;
-            padding-right: 20px;
+            font-size: 18px;
+                height: 32px;
+                line-height: 32px;
+                padding: 12px;
+                padding-left: 17px;
+                padding-right: 17px;
             text-decoration: none;
-            background-color: #222;
+            background-color:  #222;
             color: #fff;
             opacity: 0.7;
             cursor: pointer;
@@ -431,4 +433,123 @@ html,
                 word-spacing:3px;
             }
         }
+        
+        /*FOR INFORMATION AREA RESPONSIVENESS*/
+        @media screen and (max-width: 1000px){
+            .information h2 {
+                font-size: 45px;
+            }
+            .information .options-container .option .option-img-height-keeper {
+                min-height: 100px;
+                max-height: 100px;
+                height: 100px;
+            }
+            .information .options-container .option .small {
+                height: 55px;
+                width: 55px;
+            }
+            .information .options-container .option .midium {
+                height: 75px;
+                width: 75px;
+            }    
+            .information .options-container .option .large {
+                height: 95px;
+                width: 95px;
+            }
+            .information .options-container .option .option-text-height-keeper {
+                /*this class is used to align the option pictures in the same height*/
+                min-height: 300px;
+                max-height: 300px;
+                height: 300px;
+            }
+            .information .options-container .option p {
+                font-size: 20px;
+                line-height: 32px;
+                word-spacing:4px;
+            }
+        }
+        @media screen and (max-width: 600px){
+            .information h2 {
+                font-size: 38px;
+            }
+            .information .options-container .option .option-img-height-keeper {
+                min-height: 90px;
+                max-height: 90px;
+                height: 90px;
+            }
+            .information .options-container .option .small {
+                height: 50px;
+                width: 50px;
+            }
+            .information .options-container .option .midium {
+                height: 70px;
+                width: 70px;
+            }    
+            .information .options-container .option .large {
+                height: 90px;
+                width: 90px;
+            }
+            .information .options-container .option .option-text-height-keeper {
+                /*this class is used to align the option pictures in the same height*/
+                min-height: 280px;
+                max-height: 280px;
+                height: 280px;
+            }
+            .information .options-container .option p {
+                font-size: 19px;
+                line-height: 30px;
+                word-spacing:4px;
+            }
+            .information .options-container .option a {
+                font-size: 18px;
+                height: 32px;
+                line-height: 32px;
+                padding: 12px;
+                padding-left: 17px;
+                padding-right: 17px;
+            }
+        }
+        @media screen and (max-width: 400px){
+            .information h2 {
+                font-size: 25px;
+            }
+            .information .options-container .option .option-img-height-keeper {
+                min-height: 85px;
+                max-height: 85px;
+                height: 85px;
+            }
+            .information .options-container .option .small {
+                height: 45px;
+                width: 45px;
+            }
+            .information .options-container .option .midium {
+                height: 65px;
+                width: 65px;
+            }    
+            .information .options-container .option .large {
+                height: 85px;
+                width: 85px;
+            }
+            .information .options-container .option .option-text-height-keeper {
+                /*this class is used to align the option pictures in the same height*/
+                min-height: 260px;
+                max-height: 260px;
+                height: 260px;
+            }
+            .information .options-container .option p {
+                font-size: 17px;
+                line-height: 27px;
+                word-spacing:3px;
+            }
+            .information .options-container .option a {
+                font-size: 15px;
+                height: 30px;
+                line-height: 30px;
+                padding: 10px;
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+        }
+
+
         
