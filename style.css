@@ -65,7 +65,7 @@ html,
 
 
         .welcome {
-            width: auto;
+            width: 60%;
             margin-left: auto;
             margin-right: auto;
             margin-top: 5%;;
@@ -409,6 +409,9 @@ html,
 
         /*FOR WELCOME AREA RESPONSIVENESS*/
         @media screen and (max-width: 1000px){
+            .welcome{
+                width:70%;
+            }
             .welcome h2 {
                 font-size: 45px;
             }
@@ -429,6 +432,9 @@ html,
             }
         }
         @media screen and (max-width: 400px){
+            .welcome{
+                width:80%;
+            }
             .welcome h2 {
                 font-size: 25px;
             }
@@ -436,6 +442,11 @@ html,
                 font-size: 17px;
                 line-height: 27px;
                 word-spacing:3px;
+            }
+        }
+        @media screen and (max-width: 250px){
+            .welcome{
+                width:90%;
             }
         }
         
