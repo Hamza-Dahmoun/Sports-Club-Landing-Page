@@ -219,13 +219,13 @@ html,
             background-color: #222;
             color: #fff;
             height: auto;      
-            padding-right:1%;   padding-top:2%;padding-bottom:2%;
+            padding-right:1%;   padding-top:8%;padding-bottom:8%;
             /*the following is used to position the text in the begining of the img always even if the img get smaller and cannot fill the background color*/       
             position:absolute; top:0%;right:0%;left:0%;                
         }
 
         .quote .quote-text-container .quote-text {
-            font-size: 55px;
+            font-size: 60px;
             text-align: right;
             font-family: 'Special Elite', cursive;
         }
@@ -384,6 +384,10 @@ html,
         }
         @media screen and (max-width: 350px){
             /*CHANGING FONT SIZE ONLY*/
+            .quote {
+                min-height: 300px;
+                max-height: 300px; 
+            }
             .quote .quote-text-container .quote-text {
                 font-size: 23px;
             }    
